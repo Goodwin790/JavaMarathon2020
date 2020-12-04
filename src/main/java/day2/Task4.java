@@ -10,7 +10,7 @@ public class Task4 {
         if (x >= 5) {
             y = (x * x - 10) / (x + 7);
         } else if (x > -3 && x < 5) {
-            y = (x + 3) * (x * x - 2);
+            y = (x + 3) * (Math.pow(x,2) - 2);
         } else {
             y = 420.0d;
         }
