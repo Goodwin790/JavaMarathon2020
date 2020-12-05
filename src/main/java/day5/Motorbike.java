@@ -34,4 +34,8 @@ public class Motorbike {
         this.color = color;
         this.model = model;
     }
+    public void info(){
+        System.out.println(  getColor() +" " +  getModel() + " " + getYear() );
+
+    }
 }

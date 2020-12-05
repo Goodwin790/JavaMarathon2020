@@ -7,8 +7,7 @@ Task1 {
         dodge.setYear(2017);
         dodge.setColor("красный");
         dodge.setModel("dodge challenger");
-        System.out.println(" Хочу " + dodge.getColor() + " " +
-                dodge.getModel() + " " + dodge.getYear() + " года");
+       dodge.info();
     }
 
 }
