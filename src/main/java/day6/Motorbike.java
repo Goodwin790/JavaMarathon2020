@@ -37,12 +37,11 @@ public class Motorbike {
 
     public void info() {
         System.out.println("Это мотоцикл");
-
     }
 
     public int yearDifference(int year) {
-        int result =  this.year - year;
+        int result = this.year - year;
+        Math.abs(result);
         return result;
-
     }
 }

@@ -28,8 +28,9 @@ public class Car {
     public String getModel() {
         return model;
     }
+
     public void info() {
-        System.out.println( getColor() + " " +
-                getModel() + " " + getYear() );
+        System.out.println(getColor() + " " +
+                getModel() + " " + getYear());
     }
 }
