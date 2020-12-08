@@ -33,4 +33,10 @@ public class Car {
         System.out.println(getColor() + " " +
                 getModel() + " " + getYear());
     }
+
+    public int yearDifference(int year) {
+        int result = this.year - year;
+        Math.abs(result);
+        return result;
+    }
 }
