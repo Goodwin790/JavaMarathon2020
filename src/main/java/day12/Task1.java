@@ -1,10 +1,13 @@
 package day12;
 
+import com.mysql.cj.x.protobuf.MysqlxDatatypes;
+
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Task1 {
-    public static void main(String[] args) {
+    public static void main(MysqlxDatatypes.Scalar.String[] args) {
 
         List<String> cars = new ArrayList<>();
         cars.add("bmw");

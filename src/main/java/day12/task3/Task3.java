@@ -5,6 +5,17 @@ import java.util.Collections;
 import java.util.List;
 
 public class Task3 {
+    public static List<MusicBand> groupsAfter2000(List<MusicBand> bands) {
+        List<MusicBand> groupsAfter2000 = new ArrayList<>();
+        for (MusicBand band : bands) {
+            if (band.getYear() > 2000) {
+                groupsAfter2000.add(band);
+            }
+        }
+        return groupsAfter2000;
+
+    }
+
     public static void main(String[] args) {
         MusicBand mb1 = new MusicBand("massive attack", 1994);
         MusicBand mb2 = new MusicBand("the prodigy", 1990);
@@ -17,18 +28,22 @@ public class Task3 {
         MusicBand mb9 = new MusicBand("cradle of filth", 1991);
         MusicBand mb10 = new MusicBand("Anorexia Nervosa", 1991);
 
-        List<MusicBand> bands = new ArrayList<>();
-        bands.add(mb1);
-        bands.add(mb2);
-        bands.add(mb3);
-        bands.add(mb4);
-        bands.add(mb5);
-        bands.add(mb6);
-        bands.add(mb7);
-        bands.add(mb8);
-        bands.add(mb9);
-        bands.add(mb10);
-
-        Collections.shuffle(bands);
+        List<MusicBand> musicBands = new ArrayList<>();
+        musicBands.add(mb1);
+        musicBands.add(mb2);
+        musicBands.add(mb3);
+        musicBands.add(mb4);
+        musicBands.add(mb5);
+        musicBands.add(mb6);
+        musicBands.add(mb7);
+        musicBands.add(mb8);
+        musicBands.add(mb9);
+        musicBands.add(mb10);
+        System.out.println(musicBands);
+        Collections.shuffle(musicBands);
+        System.out.println(musicBands);
+        System.out.println(groupsAfter2000(musicBands));
     }
 }
+
+
